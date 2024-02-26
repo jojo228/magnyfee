@@ -61,7 +61,7 @@ class Vendor(models.Model):
         unique=True, length=10, max_length=20, prefix="ven", alphabet="abcdefgh12345"
     )
 
-    title = models.CharField(max_length=100, default="Flueeden")
+    title = models.CharField(max_length=100, default="Magnyfee")
     image = models.ImageField(upload_to=user_directory_path, default="vendor.jpg")
     cover_image = models.ImageField(upload_to=user_directory_path, default="vendor.jpg")
     # description = models.TextField(null=True, blank=True, default="I am am Amazing Vendor")
